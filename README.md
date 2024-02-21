@@ -30,7 +30,6 @@ To follow this project, please install the following locally:
     * pandas
     * requests
     * BeautifulSoup
-    * scikit-learn
     
 ## Data
 
