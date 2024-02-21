@@ -11,7 +11,7 @@ In this project, we'll predict the winner of football matches in the English Pre
 
 ## Code
 
-You can find the code for this project [here](https://github.com/dataquestio/project-walkthroughs/tree/master/football_matches).
+You can find the link to the stats from all these teams here [here]([https://github.com/dataquestio/project-walkthroughs/tree/master/football_matches](https://fbref.com/en/comps/9/Premier-League-Stats)).
 
 File overview:
 
