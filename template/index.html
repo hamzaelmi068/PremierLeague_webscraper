@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Teams</title>
+</head>
+<body>
+    <h1>Premier League Teams</h1>
+    <ul>
+        {% for index, team_url in enumerate(team_urls) %}
+            <li><a href="{{ url_for('team_details', team_index=index) }}">Team {{ index + 1 }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
