@@ -1,4 +1,6 @@
+# importing flask for the web app
 from flask import Flask, render_template
+# importing the pandas library
 import pandas as pd
 from test import get_standings_table, get_team_urls, get_team_matches, get_team_shooting_stats
 
