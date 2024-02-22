@@ -2,12 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+# getting the standings using GET from the table
 def get_standings_table(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     standings_table = soup.select_one('table.stats_table')
     return standings_table
 
+# extracting the squad
 def get_team_urls(standings_table):
     links = standings_table.select('a[href^="/squads/"]')
     team_urls = [f"https://fbref.com{l['href']}" for l in links]
@@ -15,6 +17,7 @@ def get_team_urls(standings_table):
 
 def get_team_matches(url):
     response = requests.get(url)
+    # using BeautifulSoup for parsing HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
     matches = pd.read_html(response.text, match="Scores & Fixtures")[0]
     return matches
