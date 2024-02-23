@@ -2,7 +2,7 @@
 
 In this project, we'll predict the winner of football matches in the English Premier League (EPL).  
 
-**Project Steps**
+**Overview**
 
 * Scrape match data using requests, BeautifulSoup, and pandas.  
 * Clean the data and get it ready for machine learning using pandas.
